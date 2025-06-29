@@ -1,0 +1,3 @@
+14:48:36.433 [com.example.LoggingAppendersExample.main()] INFO  com.example.LoggingAppendersExample - Logging to both console and file
+14:48:36.439 [com.example.LoggingAppendersExample.main()] WARN  com.example.LoggingAppendersExample - This is a warning
+14:48:36.440 [com.example.LoggingAppendersExample.main()] ERROR com.example.LoggingAppendersExample - This is an error message

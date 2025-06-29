@@ -40,12 +40,12 @@ public static double predictFutureValue(int years, double amount, double rate)
 # To avoid excessive computations for larger datasets,iteration or memoization can be used to reduce stack usage.
 Convert to Iterative Solution
 Avoid recursion altogether:
- <!-- public static double predictFutureValueIterative(int years, double amount, double rate) {
+  public static double predictFutureValueIterative(int years, double amount, double rate) {
     for (int i = 0; i < years; i++) {
         amount *= (1 + rate);
     }
     return amount;
-} -->
+} 
  Time Complexity: O(n)
  Space Complexity: O(1) — no stack usage
  Safe for large n
