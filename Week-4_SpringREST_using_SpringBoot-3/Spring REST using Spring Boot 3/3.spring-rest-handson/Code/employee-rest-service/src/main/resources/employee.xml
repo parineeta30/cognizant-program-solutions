@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- Skill beans -->
+    <bean id="skill1" class="com.cognizant.springrest.model.Skill">
+        <property name="id" value="1"/>
+        <property name="name" value="Java"/>
+    </bean>
+
+    <bean id="skill2" class="com.cognizant.springrest.model.Skill">
+        <property name="id" value="2"/>
+        <property name="name" value="Angular"/>
+    </bean>
+
+    <!-- Department beans -->
+    <bean id="department1" class="com.cognizant.springrest.model.Department">
+        <property name="id" value="1"/>
+        <property name="name" value="Human Resources"/>
+    </bean>
+
+    <bean id="department2" class="com.cognizant.springrest.model.Department">
+        <property name="id" value="2"/>
+        <property name="name" value="IT"/>
+    </bean>
+
+    <!-- Employee beans -->
+    <bean id="employee1" class="com.cognizant.springrest.model.Employee">
+        <property name="id" value="1"/>
+        <property name="name" value="John Doe"/>
+        <property name="salary" value="35000"/>
+        <property name="permanent" value="true"/>
+        <property name="dateOfBirth">
+            <bean class="java.util.Date">
+                <constructor-arg value="2000/03/15"/>
+            </bean>
+        </property>
+        <property name="department" ref="department1"/>
+        <property name="skillList">
+            <list>
+                <ref bean="skill1"/>
+                <ref bean="skill2"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="employee2" class="com.cognizant.springrest.model.Employee">
+        <property name="id" value="2"/>
+        <property name="name" value="Jane Smith"/>
+        <property name="salary" value="45000"/>
+        <property name="permanent" value="false"/>
+        <property name="dateOfBirth">
+            <bean class="java.util.Date">
+                <constructor-arg value="1999/07/20"/>
+            </bean>
+        </property>
+        <property name="department" ref="department2"/>
+        <property name="skillList">
+            <list>
+                <ref bean="skill2"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- All Employees in a list -->
+    <bean id="employeeList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="employee1"/>
+                <ref bean="employee2"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!-- All Departments in a list -->
+    <bean id="departmentList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="department1"/>
+                <ref bean="department2"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
