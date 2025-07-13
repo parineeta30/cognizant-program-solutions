@@ -1,0 +1,5 @@
+com\cognizant\ormlearn\repository\DepartmentRepository.class
+com\cognizant\ormlearn\OrmLearnApplication.class
+com\cognizant\ormlearn\model\Employee.class
+com\cognizant\ormlearn\service\DepartmentService.class
+com\cognizant\ormlearn\model\Department.class

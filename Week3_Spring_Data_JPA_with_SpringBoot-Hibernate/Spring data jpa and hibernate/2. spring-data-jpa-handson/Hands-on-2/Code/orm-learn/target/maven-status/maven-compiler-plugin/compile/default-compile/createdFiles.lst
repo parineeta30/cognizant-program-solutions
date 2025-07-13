@@ -1,0 +1,3 @@
+com\cognizant\ormlearn\model\Stock.class
+com\cognizant\ormlearn\OrmLearnApplication.class
+com\cognizant\ormlearn\repository\StockRepository.class

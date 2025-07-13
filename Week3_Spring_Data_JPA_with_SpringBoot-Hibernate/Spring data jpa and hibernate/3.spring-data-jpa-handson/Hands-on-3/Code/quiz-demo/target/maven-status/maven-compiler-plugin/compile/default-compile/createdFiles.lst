@@ -1,0 +1,14 @@
+com\cognizant\ormlearn\repository\UserRepository.class
+com\cognizant\ormlearn\model\User.class
+com\cognizant\ormlearn\test\AttemptTest.class
+com\cognizant\ormlearn\service\AttemptService.class
+com\cognizant\ormlearn\repository\AttemptRepository.class
+com\cognizant\ormlearn\repository\QuestionRepository.class
+com\cognizant\ormlearn\model\Option.class
+com\cognizant\ormlearn\service\AttemptServiceImpl.class
+com\cognizant\ormlearn\QuizAttemptHqlDemoApplication.class
+com\cognizant\ormlearn\model\Question.class
+com\cognizant\ormlearn\repository\OptionRepository.class
+com\cognizant\ormlearn\model\Attempt.class
+com\cognizant\ormlearn\model\AttemptOption.class
+com\cognizant\ormlearn\model\AttemptQuestion.class
